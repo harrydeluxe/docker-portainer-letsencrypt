@@ -16,7 +16,8 @@ services:
       SSL:
       SSLCERT: ${PORTAINER_SSL_CERTIFICATE}
       SSLKEY: ${PORTAINER_SSL_KEY}
-
+    command: --no-analytics
+    
 networks:
     default:
        external:
